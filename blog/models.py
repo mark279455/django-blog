@@ -21,7 +21,7 @@ class Post(models.Model):
         User, related_name='blogpost_like', blank=True)
 
     class Meta:
-        ordering = ["created_on"]
+        ordering = ["-created_on"]
 
     def __str__(self):
         return self.title
